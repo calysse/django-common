@@ -9,8 +9,6 @@ from django.utils.translation import ugettext_lazy as _
 class DictionaryField(models.Field):
     description = _("Dictionary object")
 
-    __metaclass__ = models.SubfieldBase
-
     def __init__(self, *args, **kwargs):
         #from south.modelsinspector import add_introspection_rules
         #add_introspection_rules([], ["^common\.fields\.dictionary\.DictionaryField"])
